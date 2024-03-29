@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Outfit;
+    src: url(/assets/fonts/outfit/);
+    src: url();
+}
+
+/* body {
+    padding-top: 152px;
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    display: block-flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body {
+    width: 100%;
+    background-color: #F3E5D7;
+    padding-top: 122px;
+    padding-bottom: 122px;
+}
+
+main {
+    padding: 40px;
+    background-color: white;
+    width: 736px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text-content {
+    margin: 40px 0 0 0;
+}
+
+h1 {
+    padding-bottom: 24px;
+}
+
+article {
+    margin-top: 32px;
+}
+
+.preparation {
+    background-color: #FFF7FB;
+    border-radius: 12px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin-bottom: 0;
+}
+ .ingredients-list, .instructions-list, .preparation-list {
+    list-style-position: inside;
+ }
