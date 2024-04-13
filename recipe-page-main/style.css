@@ -3,20 +3,58 @@
     padding: 0;
 }
 @font-face {
-    font-family: Outfit;
-    src: url(/assets/fonts/outfit/);
-    src: url();
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/outfit/static/Outfit-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'young-serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');    
 }
 
-/* body {
-    padding-top: 152px;
-    background-color: hsl(212, 45%, 89%);
-    font-family: "Outfit", sans-serif;
-    min-height: 100vh;
-    display: block-flex;
-    justify-content: center;
-    align-items: center;
-} */
+html {
+    width: 100%;
+}
 
 body {
     width: 100%;
@@ -26,6 +64,7 @@ body {
 }
 
 main {
+    width: 100%;
     padding: 40px;
     background-color: white;
     width: 736px;
@@ -35,7 +74,7 @@ main {
 }
 
 .top-image {
-    width: 100%;
+    max-width: 100%;
     border-radius: 12px;
 }
 
@@ -45,27 +84,186 @@ main {
 
 h1 {
     padding-bottom: 24px;
+    font-size: 40px;
+    font-family: 'young-serif';
+    font-weight: bold;
+    color: hsl(24, 5%, 18%);
+}
+
+p {
+    font-family: 'outfit';
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
 }
 
 article {
     margin-top: 32px;
+    font-size: 16px;
+    font-family: 'outfit';
+    font-weight: 400;
+    padding: 28px;
+    margin-bottom: 32px;
+    padding-left: 0;
+}
+
+article:nth-of-type(2) {
+    margin-top: 0;
+    color: #854632;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.recipe, .nutrition {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nutrition p {
+    margin-bottom: 16px;
+}
+
+.preparation-list strong {
+    margin-left: 16px;
 }
 
 .preparation {
     background-color: #FFF7FB;
     border-radius: 12px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding: 28px;
+}
+
+.preparation h2, h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 16px;
+    line-height: 100%;
+}
+
+ul, ol {
+    color: hsl(332, 51%, 32%);
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+
+.two-lis {
+    margin-bottom: 16px;
+}
+
+.list-span {
+    margin-left: 16px;
+    color: hsl(30, 10%, 34%);
+    line-height: 24px;
+    font-size: 16px;
+} 
+
+strong {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.heading-2 {
+    font-family: 'young-serif';
+    font-size: 28px;
+    line-height: 100%;
+}
+
+ul.ingredients-list {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+li:nth-of-type(1) {
+    margin-top: 0;
+}
+
+li {
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 table, th, td {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(30, 10%, 34%);
     border-collapse: collapse;
 }
 
+hr {
+    width: 736px;
+    border: 1px solid #E3DDD7;
+}
+
 table {
+    width: 100%;
     margin-bottom: 0;
+    margin-top: 32px;
+    font-family: "outfit";
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition p {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+td {
+    padding-left: 32px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+tr:first-child td {
+    padding-top: 0;
+}
+
+tr {
+    padding-bottom: 16px;
+}
+
+td:nth-of-type(2) {
+    padding-left: 16px;
+    padding-right: 32px;
+    color: #854632;
 }
  .ingredients-list, .instructions-list, .preparation-list {
     list-style-position: inside;
+ }
+
+ @media screen and (max-width: 1440px) {
+    html {
+        width: 100%;
+        padding: 0;
+    }
+    body {
+        padding: 0;
+        background-color: white;
+        margin: 0;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .top-image {
+        border-radius: 0%;
+    }
+    section {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    h1 {
+        font-size: 36px;
+        font-family: 'young serif';
+    }
+    hr {
+        width: 100%;
+    }
  }
